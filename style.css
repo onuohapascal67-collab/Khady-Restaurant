@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-top: #ff0000 20px solid;
+    box-shadow:  0 2px 8px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+}
+
+nav ul li a:hover {
+    background-color: #e5e5e5;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.logo {
+    color: red;
+    font-size: 30px;
+}
+
+ul {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 15px;
+    background-color: white;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-box i {
+    color: gray;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart {
+    display: flex;
+}
+
+.ct {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.h-tag1 {
+    color: black;
+}
+
+.h-tag2 {
+    color: red;
+}
+
+.hero {
+    margin-top: 70px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+
+.burger-hero {
+    width: 350px;
+    height: 450px;
+    background-color: #ff0000;
+    border-radius: 30px;
+    position: relative;
+}
+
+.burger-hero img {
+    width: 400px;
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    border-radius: 30px;
+    object-fit: cover;
+    transform: translateX(-50%);
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.text button {
+    display: block;
+    margin: 10px;
+}
+
+.foods {
+    display: flex;;
+    box-shadow: black 0 2px 8px rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.foods img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.h-tag1, .h-tag2 h1 {
+    animation: slideside 1s ease-out;
+}
+
+@keyframes slideside {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateYX(0);
+    }
+}
+
+.burger-hero {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
