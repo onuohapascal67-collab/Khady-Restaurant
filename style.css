@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
@@ -87,15 +92,20 @@ body {
 }
 
 .hero {
-    margin-top: 70px;
     font-size: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 100px;
+    gap: 60px;
+}
+.h-tag2 {
+    display: flex;
+    color: red;
 }
 
 .burger-hero {
+    margin-top: 70px;
+    margin-left: 180px;
     width: 350px;
     height: 450px;
     background-color: #ff0000;
@@ -121,11 +131,43 @@ button {
     border-radius: 30px;
     cursor: pointer;
     margin-top: 0;
+    transition: .35s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+}
+
+.services {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.services p {
+    font-size: 20px;
+    color: #000;
 }
 
 .text button {
     display: block;
     margin: 10px;
+}
+
+.welcome {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.text {
+    min-width: 420px;
+    flex: 1;
+    padding-left: 70px;
+    margin-top: 0;
 }
 
 .foods {
@@ -145,10 +187,16 @@ button {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.h-tag1, .h-tag2 h1 {
+.h-tag1 h1,
+.h-tag2 h1 {
     animation: slideside 1s ease-out;
 }
 
+
+.h-tag2{
+    width: 100%;
+    color: #ff0000;
+}
 @keyframes slideside {
     from {
         opacity: 0;
@@ -157,7 +205,7 @@ button {
 
     to {
         opacity: 1;
-        transform: translateYX(0);
+        transform: translateX(0);
     }
 }
 
