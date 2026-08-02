@@ -158,33 +158,72 @@ button:hover {
 }
 
 .welcome {
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: #ff0000;
     margin-bottom: 0px;
 }
 
 .text {
     min-width: 420px;
+    padding-left: 20px;
     flex: 1;
     padding-left: 70px;
-    margin-top: 0;
+    margin-top: -120px;
 }
 
 .foods {
-    display: flex;;
-    box-shadow: black 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-left: -800px;
+    margin-top: -200px;
     text-align: center;
+    transition: .35s ease-in-out;
 }
 
 .foods img {
-    width: 200px;
-    height: 200px;
-    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 1px;
     margin: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 2px;
+}
+
+.breakfast {
+    transition: .35s ease-in-out;
+    border-radius: 20px;
+}
+
+.breakfast:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+}
+
+
+.soup {
+    transition: .35s ease-in-out;
+    border-radius: 20px;
+}
+
+.soup:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+
+}
+
+.snacks {
+    transition: .35s ease-in-out;
+    border-radius: 20px;
+}
+
+.snacks:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+}
+
+.soup:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+
 }
 
 .h-tag1 h1,
@@ -227,4 +266,29 @@ button:hover {
     }
 }
 
+.button-play {
+    display: flex;
+}
 
+.play {
+    background-color: #ff0000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.play i {
+    color: white;
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.play :hover {
+    transform: translateX(-10px);
+}
