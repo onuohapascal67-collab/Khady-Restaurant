@@ -289,6 +289,136 @@ button:hover {
     margin-right: 10px;
 }
 
-.play :hover {
-    transform: translateX(-10px);
+
+.body-main {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 190px 190px;
+
+    grid-template-areas: 
+    "chicken pizza" 
+    "chicken pasta";
+
+    gap: 10px;
+    width: 90%;
+    margin: 0;
+    
+    margin: 50px auto;
 }
+
+.body-main h3 {
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.body-main p {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.body-main button {
+    border: none;
+    padding : 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+    transition: .35s ease-in-out;
+}
+
+.body-main button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(255, 0, 0, .3);
+}
+
+.grilled-chicken {
+    grid-area: chicken;
+    grid-row: 1 / span 2;
+    height: 395px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15)),
+        url('grilled-chicken.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.pizza {
+    grid-area: pizza;
+    grid-row: 1;
+    height: 192px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.15)),
+        url('pizza.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.pizza h4 {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pizza button {
+    background-color: white;
+    color: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+    transition: .35s ease-in-out;
+}
+
+.pasta {
+    grid-area: pasta;
+    grid-row: 2;
+    height: 192px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.15)),
+        url('italian-pasta');
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.pasta h4 {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pasta button {
+    background-color: white;
+    color: #ff0000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+    transition: .35s ease-in-out;
+}
+
+.grilled-chicken,
+.pizza,
+.pasta:hover {
+    transition: transform .4s ease;
+}
+
+.grilled-chicken:hover,
+.pizza:hover,
+.pasta:hover {
+    transform: scale(1.02);
+}
+
