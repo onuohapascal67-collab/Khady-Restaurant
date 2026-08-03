@@ -97,12 +97,13 @@ body {
 }
 
 .hero {
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
 }
+
 .h-tag2 {
     display: flex;
     color: red;
@@ -110,7 +111,7 @@ body {
 
 .burger-hero {
     margin-top: 70px;
-    margin-left: 180px;
+    margin-left: 200px;
     width: 350px;
     height: 450px;
     background-color: #ff0000;
