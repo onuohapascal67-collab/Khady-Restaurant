@@ -23,6 +23,10 @@ nav {
     backdrop-filter: blur(10px);
 }
 
+nav ul li a{
+    transition: .3s ease-in-out;
+}
+
 nav ul li a:hover {
     background-color: #e5e5e5;
     padding: 5px 10px;
@@ -467,6 +471,7 @@ button:hover {
     border-radius: 15px;
     flex-direction: column;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
 }
 
 .zinger-burger img {
@@ -494,6 +499,12 @@ button:hover {
     margin-bottom: 0px;
 }
 
+.zinger-burger:hover{
+    transform: translateY(-20px);
+    color: #ff0000;
+    background-color: #fff3f3;
+}
+
 .price {
     display: flex;
     justify-content: space-between;
@@ -508,6 +519,7 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
 }
 
 .beef-burger img {
@@ -529,6 +541,12 @@ button:hover {
     transition: .35s ease-in-out;
 }
 
+.beef-burger:hover {
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
+}
+
 .hot-dog {
     max-height: 250px;
     width: 220px;
@@ -537,6 +555,13 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.hot-dog:hover{
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .hot-dog img {
@@ -566,6 +591,13 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.jollof-rice:hover {
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .jollof-rice img {
@@ -595,6 +627,13 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.chicken-wings:hover{
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .chicken-wings img {
@@ -624,6 +663,13 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.supreme-pizza:hover{
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .supreme-pizza img {
@@ -653,8 +699,14 @@ button:hover {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
 }
 
+.pepperoni-pasta:hover{
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
+}
 .pepperoni-pasta img {
     align-items: center;
     width: 100px;
@@ -681,7 +733,14 @@ button:hover {
     background: #fff3f3;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);    
+    transition: .3s ease-in-out;
+}
+
+.grilled-chicken2:hover{
+    transform: translateY(-20px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .grilled-chicken2 img {
@@ -813,6 +872,13 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition: .3s ease-in-out;
+}
+
+.one-20:hover{
+    transform: translateY(-2px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .six-tin {
@@ -820,6 +886,13 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition: .3s ease-in-out;
+}
+
+.six-tin:hover{
+    transform: translateY(-2px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
 
 .two-30 {
@@ -827,4 +900,11 @@ button:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition: .3s ease-in-out;
+}
+
+.two-30:hover{
+    transform: translateY(-2px);
+    background-color: #ff0000;
+    color: #fff3f3;
 }
