@@ -110,13 +110,29 @@ body {
 }
 
 .burger-hero {
-    margin-top: 70px;
-    margin-left: 200px;
+    position: relative;
     width: 350px;
     height: 450px;
+    margin: 70px 0 0 200px;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
     background-color: #ff0000;
-    border-radius: 30px;
-    position: relative;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 25%);
+    z-index: 1;
+    clip-path: path('M 0,130 C 0,110 15,100 35,95 L 315,5 C 335,0 350,15 350,35 L 350,415 C 350,435 335,450 315,450 L 35,450 C 15,450 0,435 0,415 Z');
+}
+
+.burger-img {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%; 
+    height: auto;
+    z-index: 2; 
 }
 
 .burger-hero img {
@@ -908,4 +924,27 @@ button:hover {
     transform: translateY(-2px);
     background-color: #ff0000;
     color: #fff3f3;
+}
+
+@media screen and (max-width: 360px){
+    body {
+        background-color: #666;
+    }
+
+    .hero {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .h-tag2 {
+        display: block;
+        color: aqua;
+    }
+
+    .burger-hero{
+        width: 100px;
+        border-radius: 20px;
+        
+    }
 }
