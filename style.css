@@ -926,25 +926,96 @@ button:hover {
     color: #fff3f3;
 }
 
-@media screen and (max-width: 360px){
-    body {
-        background-color: #666;
-    }
+footer {
+    gap: 50px;
+    display: flex;
+    padding: 20px;
+    background-color: #ff0000;
+}
 
-    .hero {
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-    }
+.logo-footer{
+    display: flex;
+    font-size: 50px;
+    margin-right: 50px;
+    color: #fff3f3;
+}
 
-    .h-tag2 {
-        display: block;
-        color: aqua;
-    }
+.online {
+    display: block;
+}
 
-    .burger-hero{
-        width: 100px;
-        border-radius: 20px;
-        
-    }
+.instagram{
+    display: flex;
+    gap: 30px;
+}
+
+.instagram h3, p{
+    color: #f5f5f5f5;
+}
+
+.instagram i {
+    transition: .3s ease-in-out;
+}
+
+.instagram i:hover{
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+
+.facebook{
+    display: flex;
+    gap: 20px;
+}
+
+.facebook h3, p{
+    color: #f5f5f5f5;
+}
+
+.facebook i {
+    transition: .3s ease-in-out;
+}
+
+.facebook i:hover{
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+
+.mail{
+    display: flex;
+    gap: 20px;
+}
+
+.mail h3, p{
+    color: #f5f5f5f5;
+}
+
+.mail i {
+    transition: .3s ease-in-out;
+}
+
+.mail i:hover{
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+
+.contact{
+    display: flex;
+    gap: 20px;
+}
+
+.contact h3, p{
+    color: #f5f5f5f5;
+}
+
+.contact i {
+    transition: .3s ease-in-out;
+}
+
+.contact i:hover{
+    color: antiquewhite;
+    transform: translateY(-2px);
+}
+
+.rights{
+    margin-top: 20px;
 }
